@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CFSApplications.exe" version="3.0.0.38" publicKeyToken="b35e2343a0fb2db8" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="MicrosoftTeams-image (13).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CFSApplications" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CFSApplications.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CFSApplications.exe" size="25581568">
+      <assemblyIdentity name="CFSApplications" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AHf4H3KAzWfdxT1kLwsvJJHR6NYlD44Lh6xcET/vgfA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="457728">
+      <assemblyIdentity name="MySql.Data" version="6.9.8.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jP8v64oeMPoLcpPyDq6pEOepqe0+h3aAHY75VvgIJ9E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CFSApplications.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MicrosoftTeams-image (13).ico" size="187184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>84dUzaQG4LQCqSGYlKA+odxi9qyzCT2FquUL8nn4aLk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=NPURBANO\npurb" issuerKeyHash="926138f273f9b612cc2c405aed442b41042b34a2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>94XEWs34XFMAvWzvQDAXOoV5p/o5xeP4BN5xNwdgI70=</DigestValue></Reference></SignedInfo><SignatureValue>lhz7BpyrWUuVBZsaSIMooXIbivN0f2atqgpickN2aChUm4fXyQrQR1Ampit/+/XqLTDirvnZr0gPnBeSASVj/LQ0ehGn/kXFaT8E7SiZgcYguDhY4Ka2gSKMNm5/qjGCyK7xR5lmHWosb/Ej0/y6v/W8E9lw/j8+Xl8vsJoffwo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0yUVB61AeYHyl512DK90iKFaqcv9cfub3XXReWAVP0WA2kCTHRF+4LKLrCSAK0lRGsktAVdZuJ/se041VjEUHTPMXg0EF0x5MucfIJHOTjMcRjoLyOX7GPa7+7w1dQUcpQqWjzy6cyTMlg9tdM0djR+GN3bNq0PuoU3OxZN+CMk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bd2360073771de04f8e3c539faa779853a173040ef6cbd00535cf8cd5ac485f7" Description="" Url=""><as:assemblyIdentity name="CFSApplications.exe" version="3.0.0.38" publicKeyToken="b35e2343a0fb2db8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NPURBANO\npurb</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ipYXfYR8SXKOFEftpr4MzaotRoPMjpfeS87p8gdhmuM=</DigestValue></Reference></SignedInfo><SignatureValue>Hy5O7f/Lmj10jlhQ4l/JOp5m6tLxfByDgE9E99oC5nikkgqLTMG9D8xxtwvQuFIA26GSaQe5XTvx/+d4E3Rls/Yq5GdxX67Gk++qkHRm+LgmWglGXI/Iz8Qh9SUPVdDYshHp/KpBO4q0h9bHPSJphqA4gu412x7cdI02NWHUPDY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0yUVB61AeYHyl512DK90iKFaqcv9cfub3XXReWAVP0WA2kCTHRF+4LKLrCSAK0lRGsktAVdZuJ/se041VjEUHTPMXg0EF0x5MucfIJHOTjMcRjoLyOX7GPa7+7w1dQUcpQqWjzy6cyTMlg9tdM0djR+GN3bNq0PuoU3OxZN+CMk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQGMLOKmWVCYZCTDH621VsbTANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwATgBQAFUAUgBCAEEATgBPAFwAbgBwAHUAcgBiMB4XDTI1MTAwNzAxMzkyNloXDTI2MTAwNzA3MzkyNlowJzElMCMGA1UEAx4cAE4AUABVAFIAQgBBAE4ATwBcAG4AcAB1AHIAYjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0yUVB61AeYHyl512DK90iKFaqcv9cfub3XXReWAVP0WA2kCTHRF+4LKLrCSAK0lRGsktAVdZuJ/se041VjEUHTPMXg0EF0x5MucfIJHOTjMcRjoLyOX7GPa7+7w1dQUcpQqWjzy6cyTMlg9tdM0djR+GN3bNq0PuoU3OxZN+CMkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQC3TlyYi9WYFxmxRNmDGoQvxJK0z0FP7ZVC0sr4wendys+doLikpBvObaz7+aLmyUX/MIj/PBgwY0hKT3YZ5Rc4sZhBKBJrOf5ruLOIA+DGrLnTBC89Fpsaj6ICbPZu1bCxewNdLKxEILe8zhvliMGO4NJEPxh60zGP0WlxQzuT2g==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
